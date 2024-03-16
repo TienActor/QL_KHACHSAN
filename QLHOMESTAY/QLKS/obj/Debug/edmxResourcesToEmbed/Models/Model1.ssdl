@@ -46,11 +46,11 @@
       <PropertyRef Name="ma_kh" />
     </Key>
     <Property Name="ma_kh" Type="nvarchar" MaxLength="50" Nullable="false" />
-    <Property Name="mat_khau" Type="nvarchar" MaxLength="50" />
-    <Property Name="ho_ten" Type="nvarchar" MaxLength="50" />
-    <Property Name="cmt" Type="nvarchar" MaxLength="30" />
-    <Property Name="sdt" Type="nvarchar" MaxLength="15" />
-    <Property Name="mail" Type="nvarchar" MaxLength="100" />
+    <Property Name="mat_khau" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ho_ten" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="cmt" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="sdt" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="mail" Type="nvarchar" MaxLength="100" Nullable="false" />
     <Property Name="diem" Type="int" />
   </EntityType>
   <EntityType Name="tblLoaiPhong">

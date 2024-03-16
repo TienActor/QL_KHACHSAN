@@ -66,10 +66,7 @@ namespace TestQLKS
                     dateEndElement.SendKeys(dateend);
                     dateEndElement.SendKeys(Keys.Enter);
 
-
                     driver.FindElement(By.CssSelector(".btn")).Click();
-
-
                     try
                     {
                         IAlert alert = wait.Until(ExpectedConditions.AlertIsPresent());

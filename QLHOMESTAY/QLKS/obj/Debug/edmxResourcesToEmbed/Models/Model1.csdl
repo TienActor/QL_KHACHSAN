@@ -54,11 +54,11 @@
       <PropertyRef Name="ma_kh" />
     </Key>
     <Property Name="ma_kh" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="mat_khau" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="ho_ten" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="cmt" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-    <Property Name="sdt" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
-    <Property Name="mail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="mat_khau" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ho_ten" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="cmt" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="sdt" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mail" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="diem" Type="Int32" />
     <NavigationProperty Name="tblPhieuDatPhongs" Relationship="Self.FK__tblPhieuD__ma_kh__4E88ABD4" FromRole="tblKhachHang" ToRole="tblPhieuDatPhong" />
     <NavigationProperty Name="tblTinNhans" Relationship="Self.FK__tblTinNha__ma_kh__3D5E1FD2" FromRole="tblKhachHang" ToRole="tblTinNhan" />
