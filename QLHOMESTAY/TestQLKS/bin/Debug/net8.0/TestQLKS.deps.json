@@ -9,10 +9,12 @@
       "TestQLKS/1.0.0": {
         "dependencies": {
           "ClosedXML": "0.102.2",
+          "ClosedXML.Report": "0.2.9",
           "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
           "ExcelDataReader": "3.6.0",
           "ExcelDataReader.DataSet": "3.6.0",
           "Microsoft.NET.Test.Sdk": "17.8.0",
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1001",
           "NUnit": "3.14.0",
           "NUnit.Analyzers": "3.9.0",
           "NUnit3TestAdapter": "4.5.0",
@@ -38,6 +40,20 @@
           "lib/netstandard2.1/ClosedXML.dll": {
             "assemblyVersion": "0.102.2.0",
             "fileVersion": "0.102.2.0"
+          }
+        }
+      },
+      "ClosedXML.Report/0.2.9": {
+        "dependencies": {
+          "ClosedXML": "0.102.2",
+          "Microsoft.CSharp": "4.7.0",
+          "System.Linq.Dynamic.Core": "1.3.8",
+          "morelinq": "4.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/ClosedXML.Report.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -115,6 +131,7 @@
           }
         }
       },
+      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.NET.Test.Sdk/17.8.0": {
         "dependencies": {
           "Microsoft.CodeCoverage": "17.8.0",
@@ -123,6 +140,14 @@
       },
       "Microsoft.NETCore.Platforms/1.1.1": {},
       "Microsoft.NETCore.Targets/1.1.3": {},
+      "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Office.Interop.Excel.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.4795.1000"
+          }
+        }
+      },
       "Microsoft.TestPlatform.ObjectModel/17.8.0": {
         "dependencies": {
           "NuGet.Frameworks": "6.5.0",
@@ -370,6 +395,14 @@
           }
         }
       },
+      "morelinq/4.1.0": {
+        "runtime": {
+          "lib/net8.0/MoreLinq.dll": {
+            "assemblyVersion": "4.1.0.0",
+            "fileVersion": "4.1.0.0"
+          }
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.1"
@@ -575,6 +608,14 @@
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.1",
           "System.Runtime.Extensions": "4.3.0"
+        }
+      },
+      "System.Linq.Dynamic.Core/1.3.8": {
+        "runtime": {
+          "lib/net8.0/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.3.8.0",
+            "fileVersion": "1.3.8.0"
+          }
         }
       },
       "System.Net.Http/4.3.4": {
@@ -976,6 +1017,13 @@
       "path": "closedxml/0.102.2",
       "hashPath": "closedxml.0.102.2.nupkg.sha512"
     },
+    "ClosedXML.Report/0.2.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-U8O0Rl4fnbjuX41IIZlAFs0CWZUPNEOXsgSBS3CKr6wgDi+MTc9Cg6+jsc9sIvwqx7XOniTJwxZ23AQR8V8QOw==",
+      "path": "closedxml.report/0.2.9",
+      "hashPath": "closedxml.report.0.2.9.nupkg.sha512"
+    },
     "coverlet.collector/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -1032,6 +1080,13 @@
       "path": "microsoft.codecoverage/17.8.0",
       "hashPath": "microsoft.codecoverage.17.8.0.nupkg.sha512"
     },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
     "Microsoft.NET.Test.Sdk/17.8.0": {
       "type": "package",
       "serviceable": true,
@@ -1053,6 +1108,13 @@
       "path": "microsoft.netcore.targets/1.1.3",
       "hashPath": "microsoft.netcore.targets.1.1.3.nupkg.sha512"
     },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1001": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cuvqi/U5MYSM0gvR2l90q0m/urRgmg69EiwP5VWp1RcaJ0YT5G26Va5LaOZ3KJFc22FNihS5CUjeePUp2YpGQA==",
+      "path": "microsoft.office.interop.excel/15.0.4795.1001",
+      "hashPath": "microsoft.office.interop.excel.15.0.4795.1001.nupkg.sha512"
+    },
     "Microsoft.TestPlatform.ObjectModel/17.8.0": {
       "type": "package",
       "serviceable": true,
@@ -1066,6 +1128,13 @@
       "sha512": "sha512-9ivcl/7SGRmOT0YYrHQGohWiT5YCpkmy/UEzldfVisLm6QxbLaK3FAJqZXI34rnRLmqqDCeMQxKINwmKwAPiDw==",
       "path": "microsoft.testplatform.testhost/17.8.0",
       "hashPath": "microsoft.testplatform.testhost.17.8.0.nupkg.sha512"
+    },
+    "morelinq/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tkUeXp5dWNVP47MIhVEsIQk4DaN2oM/owIAnHblNOiwDQ5RB7oKreqZ7a+z+AEdyNgzLSkj6Pv0D0rY6Gh1/Ng==",
+      "path": "morelinq/4.1.0",
+      "hashPath": "morelinq.4.1.0.nupkg.sha512"
     },
     "NETStandard.Library/2.0.0": {
       "type": "package",
@@ -1318,6 +1387,13 @@
       "sha512": "sha512-5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
       "path": "system.linq/4.3.0",
       "hashPath": "system.linq.4.3.0.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.3.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qEBOJO6z4Ps8HE4EM3S0tvBnshgE6mpTd7sv2kAdHaMNkIRIZ+dttvaC9NnL5SFN8maHEvsW0h2xJ7X0Vp9b6Q==",
+      "path": "system.linq.dynamic.core/1.3.8",
+      "hashPath": "system.linq.dynamic.core.1.3.8.nupkg.sha512"
     },
     "System.Net.Http/4.3.4": {
       "type": "package",

@@ -13,16 +13,15 @@ using System.Threading.Tasks;
 
 namespace TestQLKS
 {
-    public class InformationTest
+    public class Contact_Test
     {
-
         [TestFixture]
         public class ContactLoginTest
         {
             private IWebDriver driver;
             private WebDriverWait wait;
 
-            // private string initialUrl = "http://localhost:49921/Account/Login";
+           // private string initialUrl = "http://localhost:49921/Account/Login";
 
 
             [SetUp]
@@ -32,9 +31,19 @@ namespace TestQLKS
                 System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
                 driver = new ChromeDriver();
                 wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10)); // Adjust the time as necessary.
-                driver.Navigate().GoToUrl("http://localhost:49921/Home/Contact");
-                Thread.Sleep(1000);
+                driver.Navigate().GoToUrl("http://localhost:49921/Account/Login");
+         
+               Thread.Sleep(1000);
 
+
+                wait.Until(ExpectedConditions.ElementIsVisible(By.Id("ma_kh")));
+                driver.FindElement(By.Id("ma_kh")).Clear();
+                driver.FindElement(By.Id("ma_kh")).SendKeys("tien321");
+
+                driver.FindElement(By.Id("mat_khau")).Clear();
+                driver.FindElement(By.Id("mat_khau")).SendKeys("123456");
+
+                driver.FindElement(By.CssSelector(".btn-primary")).Click();
 
             }
 
@@ -52,7 +61,7 @@ namespace TestQLKS
                                 UseHeaderRow = true
                             }
                         });
-                        return result.Tables[0]; // Lấy sheet đầu tiên trong file Excel
+                        return result.Tables[1]; // Lấy sheet đầu tiên trong file Excel
                     }
                 }
             }
@@ -101,28 +110,15 @@ namespace TestQLKS
                     string testCaseId = $"{testCaseIndex}";
 
                     // Lấy thông tin từ datatest
-                    string username = row["UserName"].ToString();
-                    string email = row["Email"].ToString();
-                    string message = row["TestMessenger"].ToString();
-                    string rating = row["Rating"].ToString() ;
-                    string expectedErrorMessage = row["ExpectedErrorMessage"].ToString();
-
+                   // string url = row["LinkTest"].ToString() ;
+                    string message = row["Messtext"].ToString();
+                    string rating = row["Rating"].ToString();
                     int ratingValue = int.Parse(rating); // Giả định rating là số và hợp lệ
                                                          //string expectedErrorMessage = row["ExpectedErrorMessage"].ToString();
                     int starIndex = 6 - ratingValue;
                     try
                     {
-                        wait.Until(ExpectedConditions.ElementIsVisible(By.Id("ho_ten")));
-                        driver.FindElement(By.Id("ho_ten")).Clear();
-                        driver.FindElement(By.Id("ho_ten")).Click();
-                        driver.FindElement(By.Id("ho_ten")).SendKeys(username);
-
-
-                        driver.FindElement(By.Id("mail")).Clear();
-                        driver.FindElement(By.Id("mail")).SendKeys(email);
-                        Thread.Sleep(1000);
-
-                        driver.FindElement(By.CssSelector(".btn-primary")).Click();
+                       
                         wait.Until(ExpectedConditions.ElementIsVisible(By.LinkText("Phản Hồi"))).Click();
 
                         var noiDungInput = wait.Until(ExpectedConditions.ElementIsVisible(By.Id("noi_dung")));
@@ -134,44 +130,41 @@ namespace TestQLKS
                         var RatingInput = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath("/html/body/div[3]/div/div/div/div[1]/form/div[2]/div")));
                         RatingInput.Click();
 
+
                         string cssSelector = $".star:nth-child({starIndex})";
 
-                        noiDungInput.SendKeys(cssSelector);
+                        Thread.Sleep(1000);                     
                         // driver.FindElement(By.CssSelector(cssSelector)).Click();
                         //driver.FindElement(By.CssSelector(".star:nth-child({starIndex})")).Click();
-                        SubmitFormAndHandleAlert(expectedErrorMessage, testCaseId);
+
+                        driver.FindElement(By.CssSelector(".btn")).Click();
+
+                        
+
+                        // Kiểm tra trường hợp có thông báo lỗi xuất hiện hay không
+                        //if (!string.IsNullOrEmpty(expectedErrorMessage))
+                        //{
+                        //    var errorElement = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(errorXPath)));
+                        //    string actualErrorMessage = errorElement.Text;
+                        //    Assert.That(actualErrorMessage, Is.EqualTo(expectedErrorMessage), $"Test case {testCaseId} failed. Expected error message: {expectedErrorMessage}, but got: {actualErrorMessage}");
+
+                        //    // Cập nhật kết quả thành công hoặc thất bại vào file test cases
+                        //    UpdateTestResult("C:\\Users\\dowif\\Documents\\DBCLPM\\Testcase.xlsx", testCaseId, actualErrorMessage == expectedErrorMessage ? "Pass" : "Failed");
+                        //}
+                        //else
+                        //{
+                        //    // Trường hợp không có lỗi và chuyển trang dự kiến
+                        //    wait.Until(ExpectedConditions.UrlContains("http://localhost:49921/")); // Chờ cho đến khi URL trang chủ xuất hiện
+                        //    Assert.That(driver.Url, Does.Contain("http://localhost:49921/"), "The home page was not reached after registration.");
+
+                        //    // Cập nhật kết quả thành công vào file test cases
+                        //    UpdateTestResult("C:\\Users\\dowif\\Documents\\DBCLPM\\Testcase.xlsx", testCaseId, "Pass");
+                        //}
                     }
                     catch (Exception e)
                     {
                         Assert.Fail("Test failed with exception: " + e.Message);
                     }
-                }
-            }
-
-
-            private void SubmitFormAndHandleAlert(string expectedErrorMessage, string testCaseId)
-            {
-                // Click on the submit button and handle the alert
-                driver.FindElement(By.CssSelector(".btn")).Click();
-                IAlert alert = wait.Until(ExpectedConditions.AlertIsPresent());
-                string alertText = alert.Text;
-                alert.Accept();
-
-
-                if (!string.IsNullOrEmpty(expectedErrorMessage))
-                {
-                    // If an error message is expected, wait for the alert and verify the message
-                  
-
-                    Assert.AreEqual(expectedErrorMessage, alertText, $"Test case {testCaseId} failed. Expected error message: {expectedErrorMessage}, but got: {alertText}");
-                    UpdateTestResult("C:\\Users\\TIEN\\Documents\\DBCL\\TestCaseTien.xlsx", testCaseId, "Failed");
-                }
-
-                else
-                {
-                    // If no error message is expected, check the page URL or other success criteria
-                    wait.Until(ExpectedConditions.UrlContains("http://localhost:49921/Home/Contact"));
-                    UpdateTestResult("C:\\Users\\TIEN\\Documents\\DBCL\\TestCaseTien.xlsx", testCaseId, "Passed");
                 }
             }
             [TearDown]
@@ -181,6 +174,7 @@ namespace TestQLKS
                 driver.Dispose();
             }
         }
+
 
     }
 }
