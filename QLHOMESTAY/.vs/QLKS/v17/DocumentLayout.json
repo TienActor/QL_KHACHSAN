@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\qlks\\controllers\\home\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\controllers\\home\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,12 +14,21 @@
     {
       "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\qlks\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
+      "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\qlks\\models\\tblloaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\models\\tblloaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\qlks\\models\\tblkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\models\\tblkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\qlks\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\qlks\\models\\goidichvumodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\models\\goidichvumodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -33,12 +43,39 @@
     {
       "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\qlks\\models\\tblloaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\models\\tblloaiphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./dataQLKS/True/SqlTable/dbo.tblKhachHang.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\testqlks\\testtimphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|solutionrelative:testqlks\\testtimphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\testqlks\\testinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|solutionrelative:testqlks\\testinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\testqlks\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|solutionrelative:testqlks\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/./QLKS/True/SqlTable/dbo.tblKhachHang.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\qlks\\areas\\admin\\controllers\\phieudatphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\areas\\admin\\controllers\\phieudatphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\qlks\\areas\\admin\\views\\phieudatphong\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\areas\\admin\\views\\phieudatphong\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\testqlks\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|solutionrelative:testqlks\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\qlks\\views\\account\\phieudatphong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\views\\account\\phieudatphong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -50,10 +87,13 @@
       "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\areas\\admin\\controllers\\khachhangcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\qlks\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\models\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|c:\\users\\dowif\\documents\\github\\ql_khachsan\\qlhomestay\\testqlks\\testqlks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|solutionrelative:testqlks\\testqlks.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -130,6 +170,8 @@
       "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\areas\\admin\\controllers\\indexcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\qlks\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{26A999F6-CCC7-4A93-BD51-EAC9D95F78B2}|QLKS\\QLKS.csproj|solutionrelative:qlks\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -181,7 +223,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 5,
+=======
+          "SelectedChildIndex": 4,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Bookmark",
@@ -192,7 +238,16 @@
               "Name": "ST:1636527030:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
               "Title": "GoiDichVuModel.cs",
               "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Models\\GoiDichVuModel.cs",
@@ -220,11 +275,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+=======
+              "DocumentIndex": 0,
+>>>>>>> Stashed changes
               "Title": "tblLoaiPhong.cs",
               "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Models\\tblLoaiPhong.cs",
               "RelativeDocumentMoniker": "QLKS\\Models\\tblLoaiPhong.cs",
               "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Models\\tblLoaiPhong.cs",
               "RelativeToolTip": "QLKS\\Models\\tblLoaiPhong.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T15:11:16.638Z",
@@ -241,11 +300,17 @@
               "ViewState": "AQIAAPUAAAAAAAAAAAA6wAMBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-02-24T07:38:03.928Z",
+=======
+              "ViewState": "AQIAABkAAAAAAAAAAAA0wCUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T06:03:41.374Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< Updated upstream
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "QLKS\\Views\\Home\\Index.cshtml",
@@ -264,11 +329,22 @@
               "ToolTip": "dbo.tblKhachHang [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2024-03-07T17:24:28.976Z",
+=======
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "QLKS\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "QLKS\\Models\\LoginViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T06:03:31.106Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "QLKS\\Views\\Account\\Login.cshtml",
@@ -333,25 +409,136 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
+=======
+>>>>>>> Stashed changes
               "Title": "tblKhachHang.cs",
               "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Models\\tblKhachHang.cs",
               "RelativeDocumentMoniker": "QLKS\\Models\\tblKhachHang.cs",
               "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Models\\tblKhachHang.cs",
               "RelativeToolTip": "QLKS\\Models\\tblKhachHang.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAABwAAAAAAAAAAAA0wCoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-08T04:36:37.931Z",
+=======
+              "ViewState": "AQIAABEAAAAAAAAAAAAkwBkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T06:03:17.08Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 12,
+=======
+              "DocumentIndex": 3,
+              "Title": "dbo.tblKhachHang [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/./dataQLKS/True/SqlTable/dbo.tblKhachHang.sql",
+              "ToolTip": "dbo.tblKhachHang [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-16T06:01:00.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dbo.tblKhachHang [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/./QLKS/True/SqlTable/dbo.tblKhachHang.sql",
+              "ToolTip": "dbo.tblKhachHang [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-03-16T05:58:30.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginTest.cs",
+              "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\LoginTest.cs",
+              "RelativeDocumentMoniker": "TestQLKS\\LoginTest.cs",
+              "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\LoginTest.cs",
+              "RelativeToolTip": "TestQLKS\\LoginTest.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAuwFEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T05:54:28.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TestTimPhong.cs",
+              "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\TestTimPhong.cs",
+              "RelativeDocumentMoniker": "TestQLKS\\TestTimPhong.cs",
+              "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\TestTimPhong.cs",
+              "RelativeToolTip": "TestQLKS\\TestTimPhong.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAUwFQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T15:29:53.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestInformation.cs",
+              "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\TestInformation.cs",
+              "RelativeDocumentMoniker": "TestQLKS\\TestInformation.cs",
+              "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\TestInformation.cs",
+              "RelativeToolTip": "TestQLKS\\TestInformation.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAUwCQAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-13T07:43:30.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PhieuDatPhongController.cs",
+              "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Areas\\Admin\\Controllers\\PhieuDatPhongController.cs",
+              "RelativeDocumentMoniker": "QLKS\\Areas\\Admin\\Controllers\\PhieuDatPhongController.cs",
+              "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Areas\\Admin\\Controllers\\PhieuDatPhongController.cs",
+              "RelativeToolTip": "QLKS\\Areas\\Admin\\Controllers\\PhieuDatPhongController.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAUwHIAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T15:45:15.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Areas\\Admin\\Views\\PhieuDatPhong\\Create.cshtml",
+              "RelativeDocumentMoniker": "QLKS\\Areas\\Admin\\Views\\PhieuDatPhong\\Create.cshtml",
+              "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Areas\\Admin\\Views\\PhieuDatPhong\\Create.cshtml",
+              "RelativeToolTip": "QLKS\\Areas\\Admin\\Views\\PhieuDatPhong\\Create.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAACMAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T15:45:01.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "TestQLKS\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\UnitTest1.cs",
+              "RelativeToolTip": "TestQLKS\\UnitTest1.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAH8AAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T10:19:10.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+>>>>>>> Stashed changes
               "Title": "Model1.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Models\\Model1.edmx",
               "RelativeDocumentMoniker": "QLKS\\Models\\Model1.edmx",
               "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Models\\Model1.edmx [Diagram1]",
               "RelativeToolTip": "QLKS\\Models\\Model1.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+<<<<<<< Updated upstream
               "WhenOpened": "2024-03-01T20:59:30.928Z"
             },
             {
@@ -598,11 +785,20 @@
             {
               "$type": "Document",
               "DocumentIndex": 32,
+=======
+              "WhenOpened": "2024-03-09T09:20:40.207Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+>>>>>>> Stashed changes
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "QLKS\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\dowif\\Documents\\GitHub\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "QLKS\\Views\\Shared\\_Layout.cshtml",
+<<<<<<< Updated upstream
               "ViewState": "AQIAACwAAAAAAAAAAAA1wIwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-24T07:41:43.513Z"
@@ -714,6 +910,11 @@
               "ViewState": "AQIAAEkBAAAAAAAAAAAxwGgBAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-02-24T07:37:25.628Z"
+=======
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-09T08:14:50.664Z"
+>>>>>>> Stashed changes
             }
           ]
         }

@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestQLKS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6492cb008cc69bb0a1e0a6fb249359e46feead0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b9d03a169b41b0c75e979f6fd11ee468390f821")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("TestQLKS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestQLKS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
