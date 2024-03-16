@@ -26,8 +26,7 @@ namespace TestQLKS
         private IWebDriver driver;
         private WebDriverWait wait;
 
-        public IDictionary<string, object> vars { get; private set; }
-        private IJavaScriptExecutor js;
+   
         [SetUp]
         public void SetUp()
         {
@@ -35,12 +34,8 @@ namespace TestQLKS
 
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-
-            js = (IJavaScriptExecutor)driver;
-            vars = new Dictionary<string, object>();
-
             driver.Navigate().GoToUrl("http://localhost:49921/");
-            driver.FindElement(By.CssSelector("#page > nav > div > div > div.col-xs-12.text-right.menu-1 > ul > li:nth-child(8) > a")).Click();
+            driver.FindElement(By.XPath("/html/body/div[2]/nav/div/div/div[2]/ul/li[8]/a")).Click();
             Thread.Sleep(1000);
             driver.FindElement(By.XPath("/html/body/div[2]/nav/div/div/div[2]/ul/li[8]/div/ul/li[1]/a")).Click();
         }

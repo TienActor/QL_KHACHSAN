@@ -77,11 +77,10 @@ namespace TestQLKS
                     catch (NoAlertPresentException)
                     {
                         wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-                        wait.Until(ExpectedConditions.UrlContains("http://localhost:49921/"));
-                        isDateSelectionSuccessful = driver.Url.Contains("http://localhost:49921/");
+                        wait.Until(ExpectedConditions.UrlContains("http://localhost:49921/Home/FindRoom"));
+                        Assert.That(driver.Url, Does.Contain("http://localhost:49921/Home/FindRoom"));
+                        /*isDateSelectionSuccessful = driver.Url.Contains("http://localhost:49921/Home/FindRoom")*/;
                     }
-
-
                     UpdateTestResult("C:\\Users\\dowif\\Documents\\DBCLPM\\Testcase.xlsx", testCaseId, isDateSelectionSuccessful ? "Pass" : "Fail");
 
                 }
@@ -96,7 +95,6 @@ namespace TestQLKS
                 testCaseIndex++;
             }
         }
-
 
         private DataTable ReadTestData(string filePath)
         {
