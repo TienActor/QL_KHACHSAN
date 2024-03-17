@@ -48,10 +48,8 @@ namespace TestQLKS
             // Đọc dữ liệu test từ file Excel
             //var testData = ReadTestData("C:\\Users\\dowif\\Documents\\DBCLPM\\DataTest.xlsx");
             int testCaseIndex = 1;
-           
-                
-                string testCaseId = $"{testCaseIndex}";
 
+                string testCaseId = $"{testCaseIndex}";
                 driver.FindElement(By.XPath("/html/body/div[2]/div[2]/div/div[2]/div/div[2]/table/tbody/tr[1]/td[6]")).Click();
                 Thread.Sleep(1000);
                 driver.FindElement(By.XPath("/html/body/div[2]/div[2]/div/form/div/input")).Click();
@@ -64,9 +62,6 @@ namespace TestQLKS
                 UpdateTestResult("C:\\Users\\dowif\\Documents\\DBCLPM\\Testcase.xlsx", testCaseId, "Pass");
             
             }
-        
-    
-
         private DataTable ReadTestData(string filePath)
         {
             using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))

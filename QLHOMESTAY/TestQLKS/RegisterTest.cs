@@ -88,7 +88,6 @@ namespace TestQLKS
             {
                 // Define testCaseId at the beginning of the loop
                 string testCaseId = $"{testCaseIndex}";
-
                 // Lấy thông tin từ datatest
                 string ma_kh = row["ma_kh"].ToString();
                 string mat_khau = row["mat_khau"].ToString();

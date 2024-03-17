@@ -43,7 +43,6 @@ namespace TestQLKS
                 string expectedErrorMessage = row["ExpectedErrorMessage"].ToString();
                 bool isDateSelectionSuccessful = true;
                 string actualErrorMessage = "";
-
                 try
                 {
 
@@ -76,13 +75,36 @@ namespace TestQLKS
                     }
                     catch (NoAlertPresentException)
                     {
-                        wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+                        // Tăng thời gian chờ lên 20 giây
+                        wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
+
+                        // Lưu lại handle của cửa sổ hiện tại
+                        string currentWindowHandle = driver.CurrentWindowHandle;
+
+                        // Chờ cho đến khi có thêm cửa sổ mới
+                        wait.Until(wd => wd.WindowHandles.Count > 1);
+
+                        // Chuyển WebDriver sang cửa sổ mới
+                        foreach (string windowHandle in driver.WindowHandles)
+                        {
+                            if (windowHandle != currentWindowHandle)
+                            {
+                                driver.SwitchTo().Window(windowHandle);
+                                break;
+                            }
+                        }
+
+                        // Chờ cho đến khi URL chứa chuỗi "http://localhost:49921/Home/FindRoom"
                         wait.Until(ExpectedConditions.UrlContains("http://localhost:49921/Home/FindRoom"));
                         Assert.That(driver.Url, Does.Contain("http://localhost:49921/Home/FindRoom"));
-                        /*isDateSelectionSuccessful = driver.Url.Contains("http://localhost:49921/Home/FindRoom")*/;
-                    }
-                    UpdateTestResult("C:\\Users\\dowif\\Documents\\DBCLPM\\Testcase.xlsx", testCaseId, isDateSelectionSuccessful ? "Pass" : "Fail");
+                        isDateSelectionSuccessful = driver.Url.Contains("http://localhost:49921/Home/FindRoom");
 
+                        // Chuyển WebDriver trở lại cửa sổ ban đầu
+                        driver.SwitchTo().Window(currentWindowHandle);
+                    }
+
+                    UpdateTestResult("C:\\Users\\dowif\\Documents\\DBCLPM\\Testcase.xlsx", testCaseId, isDateSelectionSuccessful ? "Pass" : "Fail");
+                 
                 }
                 catch (Exception ex)
                 {
