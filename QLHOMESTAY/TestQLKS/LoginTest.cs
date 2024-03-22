@@ -25,13 +25,10 @@ namespace TestQLKS
     {
         private IWebDriver driver;
         private WebDriverWait wait;
-
-   
         [SetUp]
         public void SetUp()
         {
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
-
             driver = new ChromeDriver();
             wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             driver.Navigate().GoToUrl("http://localhost:49921/");
@@ -57,11 +54,10 @@ namespace TestQLKS
                 }
             }
         }
-
         private void UpdateTestResult(string filePath, string testCaseID, string result)
         {
             var workbook = new XLWorkbook(filePath);
-            var worksheet = workbook.Worksheet(5); // Sửa lại số thứ tự worksheet nếu cần
+            var worksheet = workbook.Worksheet(1); // Sửa lại số thứ tự worksheet nếu cần
             bool isTestCaseFound = false;
 
             foreach (IXLRow row in worksheet.RowsUsed())
@@ -73,20 +69,17 @@ namespace TestQLKS
                     break;
                 }
             }
-
             if (!isTestCaseFound)
             {
                 throw new Exception($"Test case ID '{testCaseID}' not found.");
             }
             workbook.Save();
         }
-
         [Test]
         public void Login()
         {
-            var testData = ReadTestData("C:\\Users\\dowif\\Downloads\\dataTest_Tho.xlsx");
+            var testData = ReadTestData("C:\\Users\\thong\\OneDrive\\Máy tính\\dataTest_Tho.xlsx");
             int testCaseIndex = 1;
-
             foreach (DataRow row in testData.Rows)
             {
                 string testCaseId = $"Login_{testCaseIndex}";
@@ -94,53 +87,41 @@ namespace TestQLKS
                 string matKhau = row["mat_khau"].ToString(); // Giả sử tên cột trong Excel là "mat_khau"
                 string expectedErrorMessage = row["ExpectedErrorMessage"].ToString();
                 string errorXPath = row["ErrorXPath"].ToString();
-
                 try
                 {
                     driver.FindElement(By.Id("ma_kh")).Click();
                     driver.FindElement(By.Id("ma_kh")).Clear();
                     driver.FindElement(By.Id("ma_kh")).SendKeys(maKh);
                     Thread.Sleep(100);
-
                     driver.FindElement(By.Id("mat_khau")).Click();
                     driver.FindElement(By.Id("mat_khau")).Clear();
                     driver.FindElement(By.Id("mat_khau")).SendKeys(matKhau);
                     Thread.Sleep(100);
                     driver.FindElement(By.CssSelector(".btn-primary")).Click();
                     Thread.Sleep(100);
-
-                    // Kiểm tra trường hợp có thông báo lỗi xuất hiện hay không
                     if (!string.IsNullOrEmpty(expectedErrorMessage))
                     {
                         var errorElement = wait.Until(ExpectedConditions.ElementIsVisible(By.XPath(errorXPath)));
                         string actualErrorMessage = errorElement.Text;
                         Assert.That(actualErrorMessage, Is.EqualTo(expectedErrorMessage), $"Test case {testCaseId} failed. Expected error message: {expectedErrorMessage}, but got: {actualErrorMessage}");
-
-                        // Cập nhật kết quả thành công hoặc thất bại vào file test cases
-                        UpdateTestResult("C:\\Users\\dowif\\Downloads\\testCase_Tho.xlsx", testCaseId, actualErrorMessage == expectedErrorMessage ? "Pass" : "Failed");
+                        UpdateTestResult("C:\\Users\\thong\\OneDrive\\Máy tính\\testCase_Tho.xlsx", testCaseId, actualErrorMessage == expectedErrorMessage ? "Pass" : "Failed");
                     }
                     else
                     {
                         // Trường hợp không có lỗi và chuyển trang dự kiến
-                        wait.Until(ExpectedConditions.UrlContains("http://localhost:49921/")); // Chờ cho đến khi URL trang chủ xuất hiện
+                        wait.Until(ExpectedConditions.UrlContains("http://localhost:49921/"));
                         Assert.That(driver.Url, Does.Contain("http://localhost:49921/"), "Không quay lại trang chủ");
-
-                        // Cập nhật kết quả thành công vào file test cases
-                        UpdateTestResult("C:\\Users\\dowif\\Downloads\\testCase_Tho.xlsx", testCaseId, "Pass");
+                        UpdateTestResult("C:\\Users\\thong\\OneDrive\\Máy tính\\testCase_Tho.xlsx", testCaseId, "Pass");
                     }
-                    // Reset trạng thái cho lần test tiếp theo nếu cần
                 }
                 catch (Exception ex)
                 {
-                    // Nếu có lỗi xảy ra, cập nhật kết quả thất bại vào file test cases
-                    UpdateTestResult("C:\\Users\\dowif\\Downloads\\testCase_Tho.xlsx", testCaseId, "Fail");
-                    // Ghi lại thông tin lỗi nếu cần
+                    UpdateTestResult("C:\\Users\\thong\\OneDrive\\Máy tính\\testCase_Tho.xlsx", testCaseId, "Fail");
                     Console.WriteLine($"Test failed for test case ID: {testCaseId} with error: {ex.Message}");
                 }
                 testCaseIndex++;
             }
         }
-
         [TearDown]
         protected void TearDown()
         {
