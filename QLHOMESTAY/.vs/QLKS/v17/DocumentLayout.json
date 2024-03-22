@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\thong\\OneDrive\\M\u00E1y t\u00EDnh\\QL_KHACHSAN\\QLHOMESTAY\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|c:\\users\\thong\\onedrive\\m\u00E1y t\u00EDnh\\ql_khachsan\\qlhomestay\\testqlks\\loginadmintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|solutionrelative:testqlks\\loginadmintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|c:\\users\\thong\\onedrive\\m\u00E1y t\u00EDnh\\ql_khachsan\\qlhomestay\\testqlks\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{38CBCC51-662B-4613-B7CB-12EA42E9C7A5}|TestQLKS\\TestQLKS.csproj|solutionrelative:testqlks\\logintest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "LoginAdminTest.cs",
+              "DocumentMoniker": "C:\\Users\\thong\\OneDrive\\M\u00E1y t\u00EDnh\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\LoginAdminTest.cs",
+              "RelativeDocumentMoniker": "TestQLKS\\LoginAdminTest.cs",
+              "ToolTip": "C:\\Users\\thong\\OneDrive\\M\u00E1y t\u00EDnh\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\LoginAdminTest.cs",
+              "RelativeToolTip": "TestQLKS\\LoginAdminTest.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAcwCIAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T19:15:37.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\thong\\OneDrive\\M\u00E1y t\u00EDnh\\QL_KHACHSAN\\QLHOMESTAY\\QLKS\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "QLKS\\Views\\Home\\Index.cshtml",
@@ -47,13 +64,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LoginTest.cs",
               "DocumentMoniker": "C:\\Users\\thong\\OneDrive\\M\u00E1y t\u00EDnh\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\LoginTest.cs",
               "RelativeDocumentMoniker": "TestQLKS\\LoginTest.cs",
-              "ToolTip": "C:\\Users\\thong\\OneDrive\\M\u00E1y t\u00EDnh\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\LoginTest.cs*",
-              "RelativeToolTip": "TestQLKS\\LoginTest.cs*",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAawCgAAAAJAAAA",
+              "ToolTip": "C:\\Users\\thong\\OneDrive\\M\u00E1y t\u00EDnh\\QL_KHACHSAN\\QLHOMESTAY\\TestQLKS\\LoginTest.cs",
+              "RelativeToolTip": "TestQLKS\\LoginTest.cs",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAUwHEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-16T06:09:24.505Z",
               "EditorCaption": ""

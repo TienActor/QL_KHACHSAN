@@ -10,7 +10,7 @@ using SeleniumExtras.WaitHelpers;
 namespace TestQLKS
 {
     [TestFixture]
-    public class LoginTest
+    public class LoginAdminTest
     {
         private IWebDriver driver;
         private WebDriverWait wait;
@@ -39,7 +39,7 @@ namespace TestQLKS
                             UseHeaderRow = true
                         }
                     });
-                    return result.Tables[0];
+                    return result.Tables[1];
                 }
             }
         }
@@ -70,16 +70,16 @@ namespace TestQLKS
             int testCaseIndex = 1;
             foreach (DataRow row in testData.Rows)
             {
-                string testCaseId = $"Login_{testCaseIndex}";
-                string maKh = row["ma_kh"].ToString(); // Giả sử tên cột trong Excel là "ma_kh"
-                string matKhau = row["mat_khau"].ToString(); // Giả sử tên cột trong Excel là "mat_khau"
+                string testCaseId = $"LoginAdmin_{testCaseIndex}";
+                string maAdmin = row["ma_admin"].ToString();
+                string matKhau = row["mat_khau"].ToString();
                 string expectedErrorMessage = row["ExpectedErrorMessage"].ToString();
                 string errorXPath = row["ErrorXPath"].ToString();
                 try
                 {
-                    driver.FindElement(By.Id("ma_kh")).Click();
-                    driver.FindElement(By.Id("ma_kh")).Clear();
-                    driver.FindElement(By.Id("ma_kh")).SendKeys(maKh);
+                    driver.FindElement(By.Id("ma_admin")).Click();
+                    driver.FindElement(By.Id("ma_admin")).Clear();
+                    driver.FindElement(By.Id("ma_admin")).SendKeys(maAdmin);
                     Thread.Sleep(100);
                     driver.FindElement(By.Id("mat_khau")).Click();
                     driver.FindElement(By.Id("mat_khau")).Clear();
