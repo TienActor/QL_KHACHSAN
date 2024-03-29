@@ -155,8 +155,6 @@ namespace TestQLKS
                 testCaseIndex++;
             }
         }
-
-        
         [TearDown]
         public void Teardown()
         {

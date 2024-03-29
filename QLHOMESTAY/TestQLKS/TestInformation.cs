@@ -15,10 +15,8 @@ namespace TestQLKS
 {
     internal class TestInforPageTest
     {
-
         private IWebDriver driver;
         private WebDriverWait wait;
-
         public IDictionary<string, object> vars { get; private set; }
         private IJavaScriptExecutor js;
         [SetUp]
@@ -92,7 +90,7 @@ namespace TestQLKS
                     {
                         var errorElement = wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(errorXPath)));
                         string actualErrorMessage = errorElement.Text;
-                        Assert.That(actualErrorMessage, Is.EqualTo(expectedErrorMessage), $"Test case {testCaseId} failed. Expected error message: {expectedErrorMessage}, but got: {actualErrorMessage}");
+                        Assert.That(actualErrorMessage, Is.EqualTo(expectedErrorMessage), $" Test case {testCaseId} failed. Expected error message: {expectedErrorMessage}, but got: {actualErrorMessage}");
                         UpdateTestResult("C:\\Users\\vuduc\\Downloads\\Testcase_Nam.xlsx", testCaseId, actualErrorMessage == expectedErrorMessage ? "Pass" : "Failed");
                     }
                     else
